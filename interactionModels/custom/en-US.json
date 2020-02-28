@@ -1,0 +1,56 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "notes app",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNotesIntent",
+          "slots": [],
+          "samples": [
+            "What are my notes",
+            "read my notes",
+            "read notes",
+            "my notes",
+            "notes",
+            "show my notes"
+          ]
+        },
+        {
+          "name": "AddNoteIntent",
+          "slots": [
+            {
+              "name": "noteContent",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "noteTitle",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "new note with content {noteContent}",
+            "new note {noteTitle}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "10"
+}
